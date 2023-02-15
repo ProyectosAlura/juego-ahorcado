@@ -1,7 +1,12 @@
 :root{
     --fuente-texto-ubuntu: Ubuntu, sans-serif;
+    --fuente-texto-inter: Inter,sans-serif;
+    --color-azul: #578def;
+    --color-fondo:rgb(244, 244, 244);
 }
 
 body{
     font-family: var(--fuente-texto-ubuntu);
+    background:rgb(245, 239, 225);
 }
+

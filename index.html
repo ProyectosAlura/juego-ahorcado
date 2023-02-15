@@ -7,12 +7,24 @@
     <title>Ahorcado</title>
     <!-- importando fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!--estilos-->
     <link rel="stylesheet" href="resources/styles/reset.css">
     <link rel="stylesheet" href="resources/styles/general.css">
+    <link rel="stylesheet" href="resources/styles/cabecera.css">
+    <link rel="stylesheet" href="resources/styles/layoutInicio/botones.css">
 </head>
 <body>
-    
+    <header class="encabezado">
+        <img src="resources/images/Vector.svg" alt="logo" class="encabezado__logo">
+    </header>
+    <main class="principal" data-container-inicio>
+        <div class="conetenedor-inicio">
+            <button class="conetenedor-inicio__boton-inicio">Iniciar juego</button>
+            <button class="conetenedor-inicio__boton-agregar">Agregar nueva palabra</button>
+        </div>
+    </main>
+    <script src="logica.js"></script>
 </body>
 </html>

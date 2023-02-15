@@ -1,0 +1,11 @@
+.encabezado{
+    /*background-color: blue;*/
+    width: 100vw;
+    height: 15vh;
+}
+
+.encabezado__logo{
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
