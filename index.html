@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,12 +16,14 @@
     <link rel="stylesheet" href="resources/styles/cabecera.css">
     <link rel="stylesheet" href="resources/styles/layoutInicio/botones.css">
     <link rel="stylesheet" href="resources/styles/layoutAgregarPalabra/contenedorTexto.css">
+    <link rel="stylesheet" href="resources/styles/layoutPrincipal/canva.css">
 </head>
+
 <body>
     <header class="encabezado">
         <img src="resources/images/Vector.svg" alt="logo" class="encabezado__logo">
     </header>
-    <main class="principal" >
+    <main class="principal">
         <div class="conetenedor-inicio" data-container-inicio>
             <button class="conetenedor-inicio__boton-inicio">Iniciar juego</button>
             <button class="conetenedor-inicio__boton-agregar">Agregar nueva palabra</button>
@@ -32,11 +35,50 @@
                 <p>Se permiten máximo 8 letras</p>
             </div>
             <div class="contenedor-agregarPalabra__botones">
-                <button class="contenedor-agregarPalabra__botones-boton contenedor-agregarPalabra__botones-boton--guardar">Guardar</button>
-                <button class="contenedor-agregarPalabra__botones-boton contenedor-agregarPalabra__botones-boton--cancelar">Cancelar</button>
+                <button
+                    class="contenedor-agregarPalabra__botones-boton contenedor-agregarPalabra__botones-boton--guardar">Guardar</button>
+                <button
+                    class="contenedor-agregarPalabra__botones-boton contenedor-agregarPalabra__botones-boton--cancelar">Cancelar</button>
+            </div>
+        </div>
+        <div class="contenedor-principal">
+            <canvas class="contenedor-principal__areaDibujo"></canvas>
+            <div class="contenedor-principal__teclado">
+                <button class="contenedor-principal__teclado__boton">A</button>
+                <button class="contenedor-principal__teclado__boton">B</button>
+                <button class="contenedor-principal__teclado__boton">C</button>
+                <button class="contenedor-principal__teclado__boton">D</button>
+                <button class="contenedor-principal__teclado__boton">E</button>
+                <button class="contenedor-principal__teclado__boton">F</button>
+                <button class="contenedor-principal__teclado__boton">G</button>
+                <button class="contenedor-principal__teclado__boton">H</button>
+                <button class="contenedor-principal__teclado__boton">I</button>
+                <button class="contenedor-principal__teclado__boton">J</button>
+                <button class="contenedor-principal__teclado__boton">K</button>
+                <button class="contenedor-principal__teclado__boton">L</button>
+                <button class="contenedor-principal__teclado__boton">M</button>
+                <button class="contenedor-principal__teclado__boton">N</button>
+                <button class="contenedor-principal__teclado__boton">Ñ</button>
+                <button class="contenedor-principal__teclado__boton">O</button>
+                <button class="contenedor-principal__teclado__boton">P</button>
+                <button class="contenedor-principal__teclado__boton">Q</button>
+                <button class="contenedor-principal__teclado__boton">R</button>
+                <button class="contenedor-principal__teclado__boton">S</button>
+                <button class="contenedor-principal__teclado__boton">T</button>
+                <button class="contenedor-principal__teclado__boton">U</button>
+                <button class="contenedor-principal__teclado__boton">V</button>
+                <button class="contenedor-principal__teclado__boton">W</button>
+                <button class="contenedor-principal__teclado__boton">X</button>
+                <button class="contenedor-principal__teclado__boton">Y</button>
+                <button class="contenedor-principal__teclado__boton">Z</button>
+            </div>
+            <div class="contenedor-principal__botones">
+                <button class="contenedor-principal__botones__boton contenedor-principal__botones__boton--nuevo">Nuevo juego</button>
+                <button class="contenedor-principal__botones__boton contenedor-principal__botones__boton--desistir">Desistir</button>
             </div>
         </div>
     </main>
     <script src="logica.js"></script>
 </body>
+
 </html>
