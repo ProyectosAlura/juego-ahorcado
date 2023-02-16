@@ -5,6 +5,7 @@
 
 .conetenedor-inicio{
     display: flex;
+    display: none; /*borrar*/
     flex-direction: column;
     align-items: center;
 
@@ -30,7 +31,7 @@
 .conetenedor-inicio__boton-agregar{
     width: 65%;
     height: 3rem;
-    
+
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: 600;

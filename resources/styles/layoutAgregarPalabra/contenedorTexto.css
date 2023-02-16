@@ -1,0 +1,65 @@
+.contenedor-agregarPalabra{
+    display: none;/*borrar*/
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 75vh; /*tamaño del contenedor principal*/
+    margin-top: 5%;
+}
+
+#area{
+    width: 100%;
+    height: 65%; 
+    resize: none; /* impedir el redimensionamiento*/
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: var(--fuente-texto-inter);
+    font-size: 1.4rem;
+    color: var(--color-azul);
+}
+
+#area::placeholder{
+    color: var(--color-azul);
+}
+
+.contenedor-agregarPalabra-info {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-agregarPalabra-info > p{
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-family: var(--fuente-texto-inter);
+}
+
+.contenedor-agregarPalabra__botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 30%;
+}
+
+
+.contenedor-agregarPalabra__botones-boton{
+    width: 100%;
+    height: 30%;
+    border: none;
+    border-radius: 0.8rem;
+    font-family: var(--fuente-texto-inter);
+    font-size: 1rem;
+}
+
+.contenedor-agregarPalabra__botones-boton--guardar{
+    background-color: var(--color-azul);
+    color: white;
+}
+
+.contenedor-agregarPalabra__botones-boton--cancelar{
+    border: 1px solid var(--color-azul);
+    background-color: none;
+}

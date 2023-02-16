@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,15 +14,27 @@
     <link rel="stylesheet" href="resources/styles/general.css">
     <link rel="stylesheet" href="resources/styles/cabecera.css">
     <link rel="stylesheet" href="resources/styles/layoutInicio/botones.css">
+    <link rel="stylesheet" href="resources/styles/layoutAgregarPalabra/contenedorTexto.css">
 </head>
 <body>
     <header class="encabezado">
         <img src="resources/images/Vector.svg" alt="logo" class="encabezado__logo">
     </header>
-    <main class="principal" data-container-inicio>
-        <div class="conetenedor-inicio">
+    <main class="principal" >
+        <div class="conetenedor-inicio" data-container-inicio>
             <button class="conetenedor-inicio__boton-inicio">Iniciar juego</button>
             <button class="conetenedor-inicio__boton-agregar">Agregar nueva palabra</button>
+        </div>
+        <div class="contenedor-agregarPalabra" data-container-agregarPalabra>
+            <textarea name="" id="area" cols="30" rows="10" placeholder="Digite una palabra"></textarea>
+            <div class="contenedor-agregarPalabra-info">
+                <img src="resources/images/icono.png" alt="icono información">
+                <p>Se permiten máximo 8 letras</p>
+            </div>
+            <div class="contenedor-agregarPalabra__botones">
+                <button class="contenedor-agregarPalabra__botones-boton contenedor-agregarPalabra__botones-boton--guardar">Guardar</button>
+                <button class="contenedor-agregarPalabra__botones-boton contenedor-agregarPalabra__botones-boton--cancelar">Cancelar</button>
+            </div>
         </div>
     </main>
     <script src="logica.js"></script>
