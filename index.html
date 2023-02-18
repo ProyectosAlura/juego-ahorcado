@@ -25,60 +25,37 @@
     </header>
     <main class="principal">
         <div class="conetenedor-inicio" data-container-inicio>
-            <button class="conetenedor-inicio__boton-inicio">Iniciar juego</button>
-            <button class="conetenedor-inicio__boton-agregar">Agregar nueva palabra</button>
+            <button class="conetenedor-inicio__boton-inicio" data-boton-iniciar>Iniciar juego</button>
+            <button class="conetenedor-inicio__boton-agregar" data-boton-agregarPalabra>Agregar nueva palabra</button>
         </div>
         <div class="contenedor-agregarPalabra" data-container-agregarPalabra>
-            <textarea name="" id="area" cols="30" rows="10" placeholder="Digite una palabra"></textarea>
+            <textarea name="" id="area" cols="30" rows="10" placeholder="Digite una palabra" data-areaTexto></textarea>
             <div class="contenedor-agregarPalabra-info">
                 <img src="resources/images/icono.png" alt="icono información">
                 <p>Se permiten máximo 8 letras</p>
             </div>
             <div class="contenedor-agregarPalabra__botones">
                 <button
-                    class="contenedor-agregarPalabra__botones-boton contenedor-agregarPalabra__botones-boton--guardar">Guardar</button>
+                    class="contenedor-agregarPalabra__botones-boton contenedor-agregarPalabra__botones-boton--guardar" data-boton-guardar>Guardar</button>
                 <button
-                    class="contenedor-agregarPalabra__botones-boton contenedor-agregarPalabra__botones-boton--cancelar">Cancelar</button>
+                    class="contenedor-agregarPalabra__botones-boton contenedor-agregarPalabra__botones-boton--cancelar" data-boton-cancelar>Cancelar</button>
             </div>
         </div>
-        <div class="contenedor-principal">
-            <canvas class="contenedor-principal__areaDibujo"></canvas>
-            <div class="contenedor-principal__teclado">
-                <button class="contenedor-principal__teclado__boton">A</button>
-                <button class="contenedor-principal__teclado__boton">B</button>
-                <button class="contenedor-principal__teclado__boton">C</button>
-                <button class="contenedor-principal__teclado__boton">D</button>
-                <button class="contenedor-principal__teclado__boton">E</button>
-                <button class="contenedor-principal__teclado__boton">F</button>
-                <button class="contenedor-principal__teclado__boton">G</button>
-                <button class="contenedor-principal__teclado__boton">H</button>
-                <button class="contenedor-principal__teclado__boton">I</button>
-                <button class="contenedor-principal__teclado__boton">J</button>
-                <button class="contenedor-principal__teclado__boton">K</button>
-                <button class="contenedor-principal__teclado__boton">L</button>
-                <button class="contenedor-principal__teclado__boton">M</button>
-                <button class="contenedor-principal__teclado__boton">N</button>
-                <button class="contenedor-principal__teclado__boton">Ñ</button>
-                <button class="contenedor-principal__teclado__boton">O</button>
-                <button class="contenedor-principal__teclado__boton">P</button>
-                <button class="contenedor-principal__teclado__boton">Q</button>
-                <button class="contenedor-principal__teclado__boton">R</button>
-                <button class="contenedor-principal__teclado__boton">S</button>
-                <button class="contenedor-principal__teclado__boton">T</button>
-                <button class="contenedor-principal__teclado__boton">U</button>
-                <button class="contenedor-principal__teclado__boton">V</button>
-                <button class="contenedor-principal__teclado__boton">W</button>
-                <button class="contenedor-principal__teclado__boton">X</button>
-                <button class="contenedor-principal__teclado__boton">Y</button>
-                <button class="contenedor-principal__teclado__boton">Z</button>
-            </div>
+        <div class="contenedor-principal" data-container-principal>
+            <canvas class="contenedor-principal__areaDibujo" data-areaDibujo></canvas>
+            <h2 class="contenedor-principal__mensaje" data-mensaje>Fin del juego</h2>
+            <div class="contenedor-principal__teclado" data-teclado></div>
             <div class="contenedor-principal__botones">
-                <button class="contenedor-principal__botones__boton contenedor-principal__botones__boton--nuevo">Nuevo juego</button>
-                <button class="contenedor-principal__botones__boton contenedor-principal__botones__boton--desistir">Desistir</button>
+                <button class="contenedor-principal__botones__boton contenedor-principal__botones__boton--nuevo" data-boton-nuevoJuego>Nuevo juego</button>
+                <button class="contenedor-principal__botones__boton contenedor-principal__botones__boton--desistir" data-boton-desistir>Desistir</button>
             </div>
         </div>
     </main>
+
+    <script src="canva.js"></script>
+    <script src="teclado.js"></script>
     <script src="logica.js"></script>
+    <script src="eventos.js"></script>
 </body>
 
 </html>

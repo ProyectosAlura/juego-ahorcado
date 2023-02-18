@@ -1,11 +1,11 @@
 
 .principal{
     height: 85vh;
+    max-width: 100vw;
 }
 
 .conetenedor-inicio{
     display: flex;
-    display: none; /*borrar*/
     flex-direction: column;
     align-items: center;
 
