@@ -62,6 +62,7 @@ const desistir = () =>{
     //logica de desistir
     limpiarDibujo();
     eliminarTeclado();
+    ocultarMensaje();
 }
 
 const desplegarMensaje = (texto,color)=>{

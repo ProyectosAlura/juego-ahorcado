@@ -63,3 +63,36 @@
     border: 1px solid var(--color-azul);
     background-color: none;
 }
+
+@media screen and (min-width:768px){
+    #area{
+        font-size: 2.4rem;
+    }
+    .contenedor-agregarPalabra-info > img{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .contenedor-agregarPalabra-info > p{
+        font-size: 1.8rem;
+    }
+
+    .contenedor-agregarPalabra__botones{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contenedor-agregarPalabra__botones-boton{
+        width: 46%;
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contenedor-agregarPalabra__botones{
+        height: auto;
+    }
+    .contenedor-agregarPalabra__botones-boton{
+        margin-top: 2rem;
+        height: 3.2rem;
+    }
+}

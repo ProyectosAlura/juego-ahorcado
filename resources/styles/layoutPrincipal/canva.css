@@ -3,14 +3,14 @@
     position: absolute;
     left: 5%;
     height: 90vh;
-    width: 90%;
+    width: 90vw;
     margin-top: 1%;
 }
 
 .contenedor-principal__areaDibujo{
     /*background-color: aqua;*/
-    width: 100%;
-    height: 35%;
+    display: flex;
+    justify-content: center;
 }
 
 .contenedor-principal__teclado{
@@ -22,7 +22,6 @@
 }
 
 .contenedor-principal__mensaje{
-    /*display: flex;*/
     display: none;
     justify-content: center;
     height: 5vh;
@@ -71,3 +70,63 @@
     background-color: none;
 }
 
+@media screen and (min-width:768px){
+    .contenedor-principal{
+        height: 84vh;
+    }
+
+    .contenedor-principal__areaDibujo{
+        height: 50%;
+        width: 100%;
+    }
+
+    .contenedor-principal__mensaje{
+        font-size: 2rem;
+    }
+    .contenedor-principal__teclado{
+        height: 30%;
+        width: 90%;
+        position: relative;
+        left: 5%;
+    }
+
+    .contenedor-principal__teclado__boton{
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+
+    .contenedor-principal__botones{
+        height: auto;
+        flex-direction: row;
+    }
+
+    .contenedor-principal__botones__boton{
+        margin-top: 1rem;
+        width: 46%;
+        height: 4rem;
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contenedor-principal{
+        height: 80vh;
+    }
+
+    .contenedor-principal__mensaje{
+        margin-top: 1rem;
+    }
+
+    .contenedor-principal__teclado__boton{
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 1.5rem;
+    }
+
+    .contenedor-principal__botones__boton{
+        width: 30%;
+        height: 3rem;
+        font-size: 1.4rem;
+    }
+}
