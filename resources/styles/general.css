@@ -1,12 +1,24 @@
 :root{
-    --fuente-texto-ubuntu: Ubuntu, sans-serif;
     --fuente-texto-inter: Inter,sans-serif;
     --color-azul: #578def;
     --color-fondo:rgb(244, 244, 244);
+    --color-btn-secundario:#f2eeeec8;
+    --color-azul-hover:#3677f0;
+    --color-btn-secundario-hover:#dcdcdc;
 }
 
 body{
-    font-family: var(--fuente-texto-ubuntu);
+    font-family: var(--fuente-texto-inter);
     background:rgb(245, 239, 225);
 }
 
+.principal{
+    height: 90vh;
+    max-width: 100vw;
+}
+
+@media screen and (min-width:1024px){
+    button{
+        cursor: pointer;
+    }
+}

@@ -1,5 +1,5 @@
 .contenedor-agregarPalabra{
-    display: none;/*borrar*/
+    display: none;
     position: absolute;
     left: 10%;
     width: 80%;
@@ -15,7 +15,6 @@
     background: none;
     border: none;
     outline: none;
-    font-family: var(--fuente-texto-inter);
     font-size: 1.4rem;
     color: var(--color-azul);
 }
@@ -32,7 +31,6 @@
 .contenedor-agregarPalabra-info > p{
     margin-left: 1rem;
     font-size: 1rem;
-    font-family: var(--fuente-texto-inter);
 }
 
 .contenedor-agregarPalabra__botones{
@@ -50,7 +48,6 @@
     height: 30%;
     border: none;
     border-radius: 0.8rem;
-    font-family: var(--fuente-texto-inter);
     font-size: 1rem;
 }
 
@@ -61,7 +58,8 @@
 
 .contenedor-agregarPalabra__botones-boton--cancelar{
     border: 1px solid var(--color-azul);
-    background-color: none;
+    background-color: var(--color-btn-secundario);
+    color: var(--color-azul);
 }
 
 @media screen and (min-width:768px){
@@ -94,5 +92,13 @@
     .contenedor-agregarPalabra__botones-boton{
         margin-top: 2rem;
         height: 3.2rem;
+    }
+
+    .contenedor-agregarPalabra__botones-boton--guardar:hover{
+        background-color: var(--color-azul-hover);
+    }
+
+    .contenedor-agregarPalabra__botones-boton--cancelar:hover{
+        background-color: var(--color-btn-secundario-hover);
     }
 }

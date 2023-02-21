@@ -59,7 +59,7 @@ const nuevoJuego = () =>{
 const desistir = () =>{
     containerPrincipal.style.display="none";
     containerInicio.style.display="flex";
-    //logica de desistir
+    
     limpiarDibujo();
     eliminarTeclado();
     ocultarMensaje();

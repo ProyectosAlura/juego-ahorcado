@@ -4,6 +4,7 @@ let pincel = canva.getContext("2d");
 const alturaLineas = 313;
 const alturaLetras = 303;
 const anchoCanvas = 333;
+
 //Dibujar las lineas
 const dibujar = (longitud) => {
     let ancho = (anchoCanvas*0.85)/longitud; /* ancho de la inea */
